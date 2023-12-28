@@ -29,5 +29,9 @@ export class AppComponent {
     }
   ]
 
-  currenttUser: User = this.users[1];
+  currentUser: User | null = null;
+
+  onShowDetails(userId: string) {
+    this.currentUser = this.users.find((user) => user.id === userId) || null;
+  }
 }
