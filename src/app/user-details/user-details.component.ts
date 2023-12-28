@@ -9,6 +9,6 @@ import { User } from '../user';
   styleUrls: ['./user-details.component.css']
 })
 export class UserDetailsComponent {
-  @Input({ required: true }) user!: User;
+  @Input() user: User | null = null;
 
 }

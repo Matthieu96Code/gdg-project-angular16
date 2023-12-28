@@ -1,10 +1,10 @@
-<div class="user-details">
+<div *ngIf="user" class="user-details">
     <p>
         <span class="label">Name :</span>
-        <span cclass="value">{{user?.name}}</span>
+        <span cclass="value">{{user.name}}</span>
     </p>
     <p>
         <span class="label">Sex :</span>
-        <span class="value">{{user?.sex}}</span>
+        <span class="value">{{user.sex}}</span>
     </p>
 </div>
